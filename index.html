@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Parks and Rec Game</title>
+	<script src="final.js"></script>
+	<link rel="stylesheet" href="final.css">
+	
+	<style>
+		#b1e,#b2e,#b3e,#b4e,#b5e,#b6e,#b7e,#b8e,#b9e,#b10e {
+			border:4px solid white;
+			background:#7eb5de;
+			box-shadow: 2px 2px 5px black;
+			opacity: 1;
+			width:50px;
+			padding-left:30px;
+		}
+	</style>
+</head>
+<body onkeydown="moveImage(event)">
+	<div class="wrapper">
+		<table> 
+			<tr>
+				<td id="h1" style="width:560px;"> All The Bacon And Eggs </td>
+				<td id="instructions"> 
+					Move around using the arrow keys.<br>
+					The government is a greedy piglet, so don't get hit by it. <br>
+					Aquire all of the bacon and eggs. (10)</td>
+				<td id="score" style="width:120px"> Score: 0 </td>
+			</tr>
+			<tr> 
+				<td colspan="3"> <img src="images/plaid.jpg" alt="office" width="99.4%;" style="margin-top:5px;" id="office"> </td>
+			</tr>
+			<tr> 
+				<table>
+					<tr>
+						<td id="b1e"><img src="images/eggsandbacon.png" width="50px" ></td>
+						<td id="b2e"><img src="images/eggsandbacon.png" width="50px" ></td>
+						<td id="b3e"><img src="images/eggsandbacon.png" width="50px"></td>
+						<td id="b4e"><img src="images/eggsandbacon.png" width="50px" ></td>
+						<td id="b5e"><img src="images/eggsandbacon.png" width="50px"></td>
+						<td id="b6e"><img src="images/eggsandbacon.png" width="50px" ></td>
+						<td id="b7e"><img src="images/eggsandbacon.png" width="50px"></td>
+						<td id="b8e"><img src="images/eggsandbacon.png" width="50px"></td>
+						<td id="b9e"><img src="images/eggsandbacon.png" width="50px"></td>
+						<td id="b10e"><img src="images/eggsandbacon.png" width="50px"></td>
+					</tr>
+				</table>
+			</tr>
+		</table>
+		<div id="game" style="position:absolute;top:350px;left:650px;"> 
+			<img src="images/ronswanson.png" width="70px" id="ron" alt="andy">
+		</div>	
+		<img src="images/building.png" alt="cop" id="nasty" style="position: absolute;left:800px;top:350px;width:70px;">
+		<img src="images/eggsandbacon.png" alt="eggs and bacon" id="aquire" style="position: absolute; top: 360px; left: 520px; width: 70px;">
+
+		<p id="start" onClick="startall()" style="position:absolute; top:420px; left:530px; font-size:3em; ">Start Game </p>
+
+		<div style="visibility:hidden">
+		<audio id="audio" autoplay loop>
+			<source src="audio/parksandrectheme.mp3">
+		</audio> 
+		</div>
+	</div>
+</body>
+</html>

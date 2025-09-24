@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color:#949074;
+	font-family:'Champion';
+	color:white;
+}
+@font-face {
+	font-family: 'Champion';
+	src:url("fonts/Champion HTFHeavyweight Regular.otf") format('truetype');
+}
+
+.wrapper {
+	width:1230px;
+	margin:auto;
+}
+table {
+	width:1230px;
+	
+}
+#h1 {
+	font-size:2em;
+	text-shadow: 2px 2px 5px black;
+	
+}
+#score{
+	text-align: center;
+	color:white;
+	border:4px solid white;
+	text-shadow: 2px 2px 5px black;
+	box-shadow: 3px 3px 8px black;
+	
+}
+#start{
+	text-shadow: 4px 4px 8px black;
+	color:white;
+}
+#instructions {
+	font-size:0.8em;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+}
+#office {
+	border:4px solid white;
+	ouline: 4px solid white;
+	box-shadow: 3px 3px 8px black;
+}
+
